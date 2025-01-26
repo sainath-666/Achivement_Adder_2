@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Achievements Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>Student Achievements Tracker</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#profile">Profile</a>
+      <a href="#add">Add Achievement</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome!</h2>
+      <p>Track and preserve your achievements easily and securely.</p>
+    </section>
+
+    <section id="profile">
+      <h2>Your Achievements</h2>
+      <ul id="achievement-list">
+        <!-- Achievements will appear here -->
+      </ul>
+    </section>
+
+    <section id="add">
+      <h2>Add New Achievement</h2>
+      <form id="achievement-form">
+        <label for="title">Achievement Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+
+        <button type="submit">Add Achievement</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Achievements Tracker</p>
+    <a href="mailto:sai65265@gmail.com" id="name">SAINATHREDDY</a>
+    <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/sainath666/">LinkedIn</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
