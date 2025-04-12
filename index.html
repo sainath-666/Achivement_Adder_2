@@ -3,55 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track and manage your academic and extracurricular achievements with ease">
   <title>Student Achievements Tracker</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Student Achievements Tracker</h1>
+    <h1><i class="fas fa-trophy"></i> Student Achievements Tracker</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#profile">Profile</a>
-      <a href="#add">Add Achievement</a>
+      <a href="#home"><i class="fas fa-home"></i> Home</a>
+      <a href="#profile"><i class="fas fa-medal"></i> Achievements</a>
+      <a href="#add"><i class="fas fa-plus-circle"></i> Add New</a>
     </nav>
   </header>
 
   <main>
-    <section id="home">
-      <h2>Welcome!</h2>
-      <p>Track and preserve your achievements easily and securely.</p>
+    <section id="home" class="fade-in">
+      <h2>Welcome to Your Achievement Tracker!</h2>
+      <p class="mb-1">Track and preserve your academic and extracurricular achievements easily and securely.</p>
+      <div class="features">
+        <div class="feature-card">
+          <i class="fas fa-save fa-2x"></i>
+          <h3>Save & Organize</h3>
+          <p>Keep all your achievements in one place</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-edit fa-2x"></i>
+          <h3>Easy Editing</h3>
+          <p>Update your achievements anytime</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-mobile-alt fa-2x"></i>
+          <h3>Responsive Design</h3>
+          <p>Access from any device</p>
+        </div>
+      </div>
     </section>
 
-    <section id="profile">
+    <section id="profile" class="fade-in">
       <h2>Your Achievements</h2>
-      <ul id="achievement-list">
-        <!-- Achievements will appear here -->
-      </ul>
+      <div id="achievements-container">
+        <div id="filter-container">
+          <input type="text" id="search-achievements" placeholder="Search achievements..." class="search-input">
+        </div>
+        <ul id="achievement-list">
+          <!-- Achievements will appear here -->
+        </ul>
+        <div id="empty-state" class="text-center">
+          <i class="fas fa-award fa-3x"></i>
+          <p>No achievements yet. Add your first one!</p>
+        </div>
+      </div>
     </section>
 
-    <section id="add">
+    <section id="add" class="fade-in">
       <h2>Add New Achievement</h2>
       <form id="achievement-form">
-        <label for="title">Achievement Title:</label>
-        <input type="text" id="title" name="title" required>
+        <div class="form-group">
+          <label for="title"><i class="fas fa-heading"></i> Achievement Title:</label>
+          <input type="text" id="title" name="title" placeholder="E.g., First Place in Science Fair" required>
+        </div>
 
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <div class="form-group">
+          <label for="date"><i class="fas fa-calendar-alt"></i> Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
 
-        <label for="category">Category:</label>
-        <input type="text" id="category" name="category" required>
+        <div class="form-group">
+          <label for="category"><i class="fas fa-tag"></i> Category:</label>
+          <input type="text" id="category" name="category" placeholder="E.g., Academic, Sports, Arts" required>
+        </div>
 
-        <button type="submit">Add Achievement</button>
+        <div class="form-group">
+          <label for="description"><i class="fas fa-align-left"></i> Description (Optional):</label>
+          <textarea id="description" name="description" placeholder="Add details about your achievement"></textarea>
+        </div>
+
+        <button type="submit"><i class="fas fa-plus-circle"></i> Add Achievement</button>
       </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Student Achievements Tracker</p>
-    <a href="mailto:sai65265@gmail.com" id="name">SAINATHREDDY</a>
-    <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/sainath666/">LinkedIn</a>
+    <div class="footer-links">
+      <a href="mailto:sai65265@gmail.com" id="name"><i class="fas fa-envelope"></i> SAINATHREDDY</a>
+      <a id="linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/sainath666/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
