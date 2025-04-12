@@ -1,8 +1,8 @@
 # Student Achievement Tracker 🏆
 
-![Preview Image](https://i.imgur.com/XYZ123.png)
+![Preview Image](Preview.png)
 
-## [Live Demo](https://sainath-666.github.io/Achievement-Tracker/)
+## [Live Demo](https://sainath-666.github.io/Achivement_Adder_2/)
 
 ## About
 A simple web app to track and manage your academic and personal achievements. Add, edit, and search your accomplishments easily!
@@ -26,8 +26,8 @@ A simple web app to track and manage your academic and personal achievements. Ad
 - Google Fonts
 
 ## Connect With Me
-- GitHub: [github.com/sainath-666](https://github.com/sainath-666)
-- LinkedIn: [linkedin.com/in/sainath666](https://www.linkedin.com/in/sainath666)
+- GitHub: [sainath-666](https://github.com/sainath-666)
+- LinkedIn: [sainath666](https://www.linkedin.com/in/sainath666)
 - Email: [sai65265@gmail.com](mailto:sai65265@gmail.com)
 
 <div align="center">
